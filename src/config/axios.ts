@@ -1,6 +1,6 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
 export const restAPI: AxiosInstance = axios.create({
-  baseURL: 'http://localhost:3000/api/v1'
+  baseURL: 'https://jsonplaceholder.typicode.com/albums'
 });
 
 restAPI.interceptors.request.use((value: AxiosRequestConfig) => {
